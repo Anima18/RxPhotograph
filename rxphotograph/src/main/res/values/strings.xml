@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RxPhotograph</string>
+    <string-array name="image_select_type">
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+    <string name="image_select_title">选择图片</string>
 </resources>

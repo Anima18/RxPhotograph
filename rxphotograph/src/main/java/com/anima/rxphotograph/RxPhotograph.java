@@ -70,8 +70,7 @@ public class RxPhotograph {
     }
 
     private void requestPhoto() {
-        final String[] items = {"拍照","相册"};
-        new AlertDialog.Builder(mContext).setTitle("选择图片").setItems(items, new DialogInterface.OnClickListener() {
+        new AlertDialog.Builder(mContext).setTitle(R.string.image_select_title).setItems(R.array.image_select_type, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 getObservable().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
